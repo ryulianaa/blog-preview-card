@@ -1,0 +1,145 @@
+@font-face {
+  font-family: "Figtree";
+  src: url("assets/fonts/Figtree-VariableFont_wght.ttf");
+}
+
+:root {
+  /*Primary color*/
+  --Yellow: hsl(47, 88%, 63%);
+
+  /*Neutral color*/
+  --White: hsl(0, 0%, 100%);
+  --Grey: hsl(0, 0%, 50%);
+  --Black: hsl(0, 0%, 7%);
+
+  /*Font*/
+  --font-family: "Figtree";
+}
+
+/*General*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Yellow);
+  font-family: var(--font-family);
+}
+
+/*content*/
+main {
+  max-width: 24rem;
+  background-color: var(--White);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  box-shadow: 1rem 1rem var(--Black);
+  margin-top: 5rem;
+}
+
+.wrapper {
+  padding: 0rem 2rem 0.5rem 2rem;
+  line-height: 1.5rem;
+}
+
+.wrapper p {
+  color: var(--Grey);
+}
+
+.learn {
+  background-color: var(--Yellow);
+  max-width: 25%;
+  text-align: center;
+  color: var(--Black);
+  font-weight: 900;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0.3rem;
+}
+
+.date {
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+/*Headings*/
+h1 {
+  margin-bottom: 1rem;
+}
+
+h1 a {
+  text-decoration: none;
+  color: var(--Black);
+  cursor: pointer;
+}
+
+h1 a:hover {
+  color: var(--Yellow);
+}
+
+/*Figure*/
+.illustration img {
+  padding: 1rem;
+  display: block;
+  max-width: 100%;
+  border-radius: 2rem;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  margin-right: 12rem;
+  font-size: 0.9rem;
+  font-weight: 900;
+}
+
+.profile img {
+  max-width: 35%;
+  padding: 0.7rem;
+}
+
+/*Footer*/
+footer {
+  margin-top: 5rem;
+}
+.attribution {
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/*Mobile version*/
+@media screen and (max-width: 375px) {
+  main {
+    margin: 6rem 1rem;
+    font-size: auto;
+  }
+
+  h1 {
+    font-size: 1.3rem;
+  }
+
+  .learn {
+    font-size: 0.9rem;
+  }
+
+  .date {
+    font-size: 0.9rem;
+  }
+
+  .wrapper p {
+    font-size: 0.9rem;
+  }
+}
